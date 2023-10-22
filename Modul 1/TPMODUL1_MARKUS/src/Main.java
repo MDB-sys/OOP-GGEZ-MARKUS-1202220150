@@ -3,8 +3,9 @@ public class Main {
         Bank mandiri = new Bank();
 
         mandiri.createAccount("Aldean", 1202200777, 100000);
-        mandiri.createAccount("Tegar", 1202220150, 200000);
+        mandiri.createAccount("Markus_SI4603", 1202220150, 200000);
         mandiri.createAccount("Gemilang", 1202200999, 300000);
+
         
         System.out.println("--------------");
 

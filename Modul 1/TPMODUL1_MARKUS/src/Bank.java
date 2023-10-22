@@ -10,27 +10,28 @@ public class Bank {
     public void createAccount(String name, int accountNumber, int balance) {
         this.accounts.add(new Account(name, accountNumber, balance));
         System.out.println("Saldo akun " + name +": " + balance );
+
     }
 
     public void removeAccount(String name){
-        int isFind = getAccount(name);
+        int isFind = findAccount(name);
         System.out.println("Akun " + this.accounts.get(isFind).getName() + " Berhasil di hapus.");
         accounts.remove(isFind);
         
     }
 
     public void withdrawAccount(String name, int money){
-        int isFind = getAccount(name);
+        int isFind = findAccount(name);
         this.accounts.get(isFind).withdraw(money);
     }
 
     public void depositAccount(String name,int money){
-        int isFind = getAccount(name);
+        int isFind = findAccount(name);
         this.accounts.get(isFind).deposit(money);
 
     }
 
-    public int getAccount(String name){
+    public int findAccount(String name){
         int result = 0;
         int j = 0;
         
@@ -42,6 +43,14 @@ public class Bank {
             j += 1;
         }
         return result;
+    }
+
+    public void getAccount(String name){
+        int isFind = findAccount(name);
+        String accountName = this.accounts.get(isFind).getName();
+        int accountBalance = this.accounts.get(isFind).getBalance();
+
+        System.out.println("Saldo akun " + accountName + ": " + accountBalance );
     }
 
     public void getAllAccount(){
