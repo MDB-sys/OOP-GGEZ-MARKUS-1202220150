@@ -45,7 +45,7 @@ public class Account {
         if(this.balance > money){
             this.balance = this.balance - money;
             result = true;
-            System.out.println("Saldo akun "+this.getName()+" setelah menarik uang: " + this.balance);
+            System.out.println("Saldo akun "+ getName()+" setelah menarik uang: " + this.balance);
             return result;
         }
         else{

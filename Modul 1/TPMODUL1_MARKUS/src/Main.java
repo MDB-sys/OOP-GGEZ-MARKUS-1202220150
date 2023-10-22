@@ -10,11 +10,11 @@ public class Main {
         System.out.println("--------------");
 
         mandiri.depositAccount("Aldean", 50000);
-        mandiri.withdrawAccount("Tegar", 20000);
+        mandiri.withdrawAccount("Markus_SI4603", 20000);
 
         System.out.println("--------------");
         
-        mandiri.removeAccount("Tegar");
+        mandiri.removeAccount("Gemilang");
         System.out.println("------------");
 
         mandiri.getAllAccount();
