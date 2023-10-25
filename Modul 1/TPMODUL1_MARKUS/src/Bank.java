@@ -15,7 +15,6 @@ public class Bank {
 
     public void removeAccount(String name){
         int isFind = findAccount(name);
-        // System.out.println(isFind);
         System.out.println("Akun " + this.accounts.get(isFind).getName() + " Berhasil di hapus.");
         accounts.remove(isFind);
         
@@ -23,7 +22,6 @@ public class Bank {
 
     public void withdrawAccount(String name, int money){
         int isFind = findAccount(name);
-        System.out.println(name+" " + isFind);
         this.accounts.get(isFind).withdraw(money);
     }
 
