@@ -10,7 +10,7 @@ public class Database {
 
     // TODO: Create Method to insert Konser to Database
 
-    public void addConser(Konser konser){
+    protected void addConser(Konser konser){
         konsers.add(konser);
     }
 
@@ -20,10 +20,11 @@ public class Database {
     public void showConser(){
         int j = 1;
         for (Konser konser : konsers) {
-            System.out.println(1 + ". "+ konsers.get(j).getBandName());
-            System.out.println("Lokasi: " + konsers.get(j).getLocation());
-            System.out.println("tanggal: " + konsers.get(j).getPlayDate());
-            System.out.println("Harga Tiket: " + konsers.get(j).getPriceTicket());
+            System.out.println(j + ". "+ konser.getBandName());
+            System.out.println("Lokasi: " + konser.getLocation());
+            System.out.println("tanggal: " + konser.getPlayDate());
+            System.out.println("Harga Tiket: " + konser.getPriceTicket());
+
             j++;
         }
     }

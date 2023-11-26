@@ -4,10 +4,12 @@ public class User {
 
     private String name;
     private int phoneNumber;
+    private String password;
 
-    User(String name, int phoneNumber){
+    User(String name, int phoneNumber, String password){
         setName(name);
         setPhoneNumber(phoneNumber);
+        setPassword(password);
     }
         
     
@@ -20,16 +22,19 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
+    public void setPassword(String password){
+        this.password = password;    
+    }
 
-    public void register(){
+
+    public void display(){
         System.out.println("selamat kamu berhasil login");
         System.out.println("nama kamu adalah "+ name);
         System.out.println("nomor telpon adalan "+ phoneNumber);
 
     }
 
-
-    // TODO: Create Method to Register User and Display User's Name and Phone Number and success message
+    // TODO: Create Method to display User and Display User's Name and Phone Number and success message
 
 
 }
