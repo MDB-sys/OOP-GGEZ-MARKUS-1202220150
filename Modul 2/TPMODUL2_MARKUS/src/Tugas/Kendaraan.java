@@ -11,18 +11,28 @@ public class Kendaraan {
 		 this.nomorIdentifikasi = nomorIdentifikasi;
          this.kecepatanMaksimum = kecepatanMaksimum;
          this.kapasitasPenumpang = kapasitasPenumpang; 
-         this.kendaraan = "Kendaraan";
+        //  this.kendaraan = "Kendaraan";
 	}
 	
-	public String toString(){
-        String result = "informasi " + this.kendaraan + ":\n" + "nomor Identifikasi: " + this.nomorIdentifikasi + "\nkecepatan maksimum: " + this.kecepatanMaksimum + " KM/jam" + "\nkapasitas penumpang: " + this.kapasitasPenumpang + " orang"	 ;
-        
-        return result;
-    }
 
-    public String hitungWaktuTempuh(double jarak){
-    	double result = jarak/this.kecepatanMaksimum;
-    	return "Waktu tempuh dengan " + this.kendaraan + ": " + result + " jam" ;
+	
+	// public String toString(){
+    //     String  result= "informasi " + this.kendaraan + ":\n" + "nomor Identifikasi: " + this.nomorIdentifikasi + "\nkecepatan maksimum: " + this.kecepatanMaksimum + " KM/jam" + "\nkapasitas penumpang: " + this.kapasitasPenumpang + " orang"	 ;
+        
+    //     return result;
+    // }
+
+    // @Override
+	// public String toString() {
+	// 	return "Kendaraan [nomorIdentifikasi=" + nomorIdentifikasi + ", kecepatanMaksimum=" + kecepatanMaksimum
+	// 			+ ", kapasitasPenumpang=" + kapasitasPenumpang + ", kendaraan=" + kendaraan + "]";
+	// }
+
+
+
+	// public String hitungWaktuTempuh(double jarak){
+    // 	double result = jarak/this.kecepatanMaksimum;
+    // 	return "Waktu tempuh dengan " + this.kendaraan + ": " + result + " jam" ;
     	
-    }
+    // }
 }
